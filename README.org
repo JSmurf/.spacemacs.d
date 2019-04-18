@@ -1,0 +1,2 @@
+* Spacemacs Configuration
+This is my configuration for Spacemacs. This is where I will store all of the changes that I make, and (hopefully) make things easier to carry over when I get a new computer. 
