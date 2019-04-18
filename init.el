@@ -324,12 +324,14 @@ This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
 (setq neo-theme 'icons)
+(setq powerline-default-separator 'arrow)
 (set-frame-parameter (selected-frame) 'alpha '(92 . 90))
 (add-to-list 'default-frame-alist '(alpha . (92 . 90)))
 (neotree-show)
 (with-eval-after-load 'org
   org-directory "~/Library/Mobile Documents/iCloud~com~appsonthemove~beorg/Documents/org"
   )
+(add-hook 'org-mode-hook #'toggle-word-wrap)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
