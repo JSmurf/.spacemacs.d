@@ -135,10 +135,10 @@ values."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(ample-zen
+   dotspacemacs-themes '(cobalt2
+                         ample-zen
                          jazz
                          spacemacs-dark
-                         cobalt2
                          )
    ;; If non nil the cursor color matches the state color in GUI Emacs.
    dotspacemacs-colorize-cursor-according-to-state t
@@ -312,7 +312,7 @@ executes.
  This function is mostly useful for variables that need to be set
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
-  (add-to-list 'custom-theme-load-path "~/.emacs.d/private/themes/")
+  (add-to-list 'custom-theme-load-path "~/.spacemacs.d/themes/")
 
   )
 
