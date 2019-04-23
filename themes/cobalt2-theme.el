@@ -1,5 +1,8 @@
 ;;; cobalt2-theme.el --- Emacs theme with a light background.
 
+;; Created originally by Cezar Halmegean, modified by Alex Cooper
+;; Original Package info as follows:
+
 ;; Copyright (C) 2014 , Cezar Halmagean
 
 ;; Author: Cezar Halmagean
@@ -48,9 +51,12 @@
       (str     "#3AD900") ;; Green
       (type    "#5a532d") ;; Brownish
       (var     "#CCCCCC") ;; Light Grey
-      (warning "#ff0000") ;; Straight Red
-  ;; Other colors pulled from VS Code Theme
-  (orange "#FF7200"))
+      (warning "#A22929") ;; Was straight Red, Changed to color from VS Code Theme
+      ;; Other colors pulled from VS Code Theme
+      (ltgrn "#A5FF90") ;; A nice light green color
+      (brightblack "#0050A4") ;; A Very awesome blue color
+      (cyan "#80FCFF")
+      (orange "#FF7200"))
   (custom-theme-set-faces
    'cobalt2
    `(default ((,class (:background ,bg1 :foreground ,fg1))))
@@ -84,20 +90,20 @@
    `(link ((,class (:foreground ,const :underline t))))
    `(org-code ((,class (:foreground ,fg2))))
    `(org-hide ((,class (:foreground ,fg4))))
-   `(org-level-1 ((,class (:bold t :foreground ,orange :height 1.1))))
+   `(org-level-1 ((,class (:bold t :foreground ,builtin :height 1.1))))
    `(org-level-2 ((,class (:bold nil :foreground ,comment))))
    `(org-level-3 ((,class (:bold t :foreground ,str))))
    `(org-level-4 ((,class (:bold nil :foreground ,keyword))))
-   `(org-level-5 ((,class (:bold nil :foreground ,const))))
+   `(org-level-5 ((,class (:bold nil :foreground ,orange))))
    `(org-date ((,class (:underline t :foreground ,const) )))
    `(org-footnote  ((,class (:underline t :foreground ,fg4))))
-   `(org-link ((,class (:underline t :foreground ,type ))))
+   `(org-link ((,class (:underline t :foreground ,ltgrn))))
    `(org-special-keyword ((,class (:foreground ,func))))
    `(org-block ((,class (:foreground ,fg3))))
    `(org-quote ((,class (:inherit org-block :slant italic))))
    `(org-verse ((,class (:inherit org-block :slant italic))))
-   `(org-todo ((,class (:box (:line-width 1 :color ,const) :foreground ,const :bold t))))
-   `(org-done ((,class (:box (:line-width 1 :color ,bg3) :bold t :foreground ,bg4))))
+   `(org-todo ((,class (:box (:line-width 1 :color ,comment) :foreground ,comment :bold t))))
+   `(org-done ((,class (:box (:line-width 1 :color ,str) :bold t :foreground ,str))))
    `(org-warning ((,class (:underline t :foreground ,warning))))
    `(org-agenda-structure ((,class (:weight bold :foreground ,fg3 :box (:color ,fg4) :background ,bg3))))
    `(org-agenda-date ((,class (:foreground ,var :height 1.1 ))))
