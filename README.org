@@ -1,2 +1,10 @@
 * Spacemacs Configuration
 This is my configuration for Spacemacs. This is where I will store all of the changes that I make, and (hopefully) make things easier to carry over when I get a new computer. 
+
+** Installation
+
+- Installing Spacemacs is (relatively) simple. 
+
+- Follow the instructions from [[https://github.com/syl20bnr/spacemacs][The Spacemacs GitHub]].
+
+- Clone this repo, and delete `~/.spacemacs` to make sure Spacemacs gets all of these configurations.
