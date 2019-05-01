@@ -9,3 +9,8 @@ This is my configuration for Spacemacs. This is where I will store all of the ch
 
 - Clone this repo, and delete `~/.spacemacs` to make sure Spacemacs gets all of these configurations.
 
+- Install ispell by running `brew install ispell` 
+
+
+* Things to think about doing:
+[[https://www.reddit.com/r/emacs/comments/bfsck6/mu4e_for_dummies/][Set Up Email]]  
