@@ -9,7 +9,9 @@ This is my configuration for Spacemacs. This is where I will store all of the ch
 
 - Clone this repo, and delete `~/.spacemacs` to make sure Spacemacs gets all of these configurations.
 
-- Install ispell by running `brew install ispell` 
+- Install ispell by running src_sh{brew install ispell}
+
+
 
 
 * Things to think about doing:
