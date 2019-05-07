@@ -141,6 +141,7 @@ values."
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(cobalt2
+                         synthwave
                          ample-zen
                          jazz
                          spacemacs-dark
@@ -237,7 +238,7 @@ values."
    dotspacemacs-loading-progress-bar t
    ;; If non nil the frame is fullscreen when Emacs starts up. (default nil)
    ;; (Emacs 24.4+ only)
-   dotspacemacs-fullscreen-at-startup nil 
+   dotspacemacs-fullscreen-at-startup nil
    ;; If non nil `spacemacs/toggle-fullscreen' will not use native fullscreen.
    ;; Use to disable fullscreen animations in OSX. (default nil)
    dotspacemacs-fullscreen-use-non-native nil
@@ -370,6 +371,9 @@ you should place your code here."
    (quote
     ((buffer-file-coding-system . utf-8-unix)
      (org-html-head-include-scripts))))
+ '(spacemacs-theme-comment-bg nil)
+ '(spacemacs-theme-comment-italic t)
+ '(spacemacs-theme-keyword-italic t)
  '(vc-annotate-background "#3b3b3b")
  '(vc-annotate-color-map
    (quote
